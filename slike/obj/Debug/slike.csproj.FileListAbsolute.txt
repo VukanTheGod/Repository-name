@@ -1,0 +1,10 @@
+C:\Users\luka.vukanovic\Desktop\slike\slike\bin\Debug\slike.exe.config
+C:\Users\luka.vukanovic\Desktop\slike\slike\bin\Debug\slike.exe
+C:\Users\luka.vukanovic\Desktop\slike\slike\bin\Debug\slike.pdb
+C:\Users\luka.vukanovic\Desktop\slike\slike\obj\Debug\slike.csprojAssemblyReference.cache
+C:\Users\luka.vukanovic\Desktop\slike\slike\obj\Debug\slike.Form1.resources
+C:\Users\luka.vukanovic\Desktop\slike\slike\obj\Debug\slike.Properties.Resources.resources
+C:\Users\luka.vukanovic\Desktop\slike\slike\obj\Debug\slike.csproj.GenerateResource.cache
+C:\Users\luka.vukanovic\Desktop\slike\slike\obj\Debug\slike.csproj.CoreCompileInputs.cache
+C:\Users\luka.vukanovic\Desktop\slike\slike\obj\Debug\slike.exe
+C:\Users\luka.vukanovic\Desktop\slike\slike\obj\Debug\slike.pdb
