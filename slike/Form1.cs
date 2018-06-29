@@ -30,6 +30,12 @@ namespace slike
             InitializeComponent();
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            txtimenovo.Enabled = false;
+            lblista.Visible = false;
+        }
+
         private void txtIme_KeyDown_1(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
@@ -53,6 +59,7 @@ namespace slike
 
                 }
                 txtIme.Text = "";
+                lblista.Visible = true;
             }
         }
 
@@ -127,12 +134,8 @@ namespace slike
             if (dlg.ShowDialog() == DialogResult.OK)
             {
                 string srcPath = dlg.FileName;
-                string destinationDir = @"..\..\slike";
-                string destName = txtnovoime.Text;
-
-                string trenutno = Path.GetFileNameWithoutExtension(srcPath);
-
-                File.Copy(srcPath, destinationDir + destName);
+                txtimenovo.Enabled = true;
+                lblista.Visible = false;
             }
         } 
 
@@ -155,13 +158,21 @@ namespace slike
                 }
             }
         }
-
-        private void txtimenovo_KeyDown(object sender, KeyEventArgs e)
+        
+        private void btnnovo_Click(object sender, EventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
+            string srcPath = dlg.FileName;
+            string destinationDir = "..\\..\\slike\\";
+            string destName = txtimenovo.Text;
+            string Extension = Path.GetExtension(srcPath);
+            File.Copy(srcPath, destinationDir + destName + Extension);
+            txtimenovo.Text = "";
+            txtimenovo.Enabled = false;
+        }
 
-            }
+        private void txtIme_MouseClick(object sender, MouseEventArgs e)
+        {
+            lblista.Visible = false;
         }
     }
 }
